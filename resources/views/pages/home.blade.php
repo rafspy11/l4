@@ -19,4 +19,19 @@
             </div>
         </div>
     </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h4>Osoby zmarłe</h4>
+                    <div>
+                        @foreach ($personDied as $p)
+                            {{ $p->nazwisko }} <br />
+                        @endforeach
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </x-layout>
